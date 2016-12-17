@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Wind &amp; Demonstrating|Ace Bear</title>
+  <subtitle>Everything I know.</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://droppatter.github.io/"/>
+  <updated>2016-12-17T14:46:43.000Z</updated>
+  <id>https://droppatter.github.io/</id>
+  
+  <author>
+    <name>Ace Bear</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello.</title>
+    <link href="https://droppatter.github.io/2016/12/17/Hello/"/>
+    <id>https://droppatter.github.io/2016/12/17/Hello/</id>
+    <published>2016-12-17T14:08:08.000Z</published>
+    <updated>2016-12-17T14:46:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>遥远的朋友，你好。</p>
+<p>我是阿北冰熊，数学在读生，爱好科技却又不愿被其束缚。读过一些书文。只想回到 Web2.0 的博客时代，静心写写东西。</p>
+<a id="more"></a>
+<h3 id="关于「風雨與推演」"><a href="#关于「風雨與推演」" class="headerlink" title="关于「風雨與推演」"></a>关于「風雨與推演」</h3><p>你应看到了「風雨與推演」这个名字，别误会，这不是关于科普气象学的博客，而是记录着阿北冰熊的感悟和思考的博客。</p>
+<p>「風雨」取自「诗经」第一首诗之题。是希望自己谈生活，讲杂事时，要凭心中「无邪之思」书写生活纷繁之事。</p>
+<p>「推演」取自数学证明中的常用方法「推论演绎」。是希望自己不忘数学系本分，遇事勤于思考，勿嫌麻烦，求根究底。</p>
+<p>两词语虽然不相及，却是写文的宗旨，因此将其作为博客名。</p>
+<h3 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h3><p>还有一个「初衷」。它应当出现在这里。</p>
+<blockquote>
+<p>让科技回归工具，践行质朴效率的自然生活方式，通过在信息时代宣称不信息，来找到科技和自然的平衡点。</p>
+</blockquote>
+<p>请多关照。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;遥远的朋友，你好。&lt;/p&gt;
+&lt;p&gt;我是阿北冰熊，数学在读生，爱好科技却又不愿被其束缚。读过一些书文。只想回到 Web2.0 的博客时代，静心写写东西。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Diary" scheme="https://droppatter.github.io/tags/Diary/"/>
+    
+  </entry>
+  
+</feed>
