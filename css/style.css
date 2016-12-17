@@ -103,17 +103,18 @@ button::-moz-focus-inner {
   padding: 0;
 }
 @font-face {
-  font-family: 'proxima-nova', 'Helvetica Neue', 'PingFang SC', sans-serif;
+  font-family: FontAwesome;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: normal;
   src: url("fonts/fontawesome-webfont.eot?v=#4.0.3");
   src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
 }
 body {
   background: #fff;
   color: #4f5759;
-  font: 100% 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'PingFang SC', sans-serif;
+  font-weight: 400;
   text-rendering: optimizelegibility;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -970,7 +971,7 @@ pre .deletion {
   float: left;
   display: inline-block;
   text-transform: uppercase;
-  font-size: 120%;
+  font-size: 1%;
   padding-bottom: 0.2em;
   letter-spacing: 0.2em;
   margin: 1em 1.5em 0 0;
