@@ -954,7 +954,7 @@ pre .deletion {
 }
 #footer {
   margin: 3em 0;
-  font-size: 70%;
+  font-size: 90%;
   display: block;
   *zoom: 1;
   line-height: 1.6;
@@ -969,9 +969,9 @@ pre .deletion {
 }
 #footer .footer-blog-title {
   float: left;
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
-  font-size: 1%;
+  font-size: 10%;
   padding-bottom: 0.2em;
   letter-spacing: 0.2em;
   margin: 1em 1.5em 0 0;
