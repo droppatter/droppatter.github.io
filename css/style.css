@@ -669,24 +669,19 @@ pre .deletion {
   margin-bottom: 0;
 }
 .entry-content table {
-  margin: 20px 0;
+  margin: 0;
   width: auto;
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid #ddd;
 }
 .entry-content th {
-  font-weight: bolder;
+  font-weight: bold;
+  border-bottom: 3px solid #ddd;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  background-color: #fafafa;
-  padding: 10px 20px;
 }
 .entry-content td {
   border-bottom: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 .entry-content blockquote {
   font-family: Georgia, "Times New Roman", serif;
@@ -705,6 +700,11 @@ pre .deletion {
 .entry-content blockquote footer cite:before {
   content: "—";
   padding: 0 0.5em;
+}
+.entry-content #footnotes ol li span {
+  display: inline !important;
+  font-size: 1.4rem;
+  line-height: 1.8;
 }
 .entry-content .pullquote {
   border-left: 0;
