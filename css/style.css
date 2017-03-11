@@ -171,7 +171,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 a {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
   text-decoration: none;
 }
 a:hover {
@@ -288,10 +288,10 @@ code {
   font-size: 100%;
 }
 .entry-content .gist .gist-file .gist-meta a {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 .entry-content .gist .gist-file .gist-meta a:visited {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 figure.highlight {
   background: color-code;
@@ -434,10 +434,10 @@ pre .deletion {
   margin: 10px 0;
 }
 .blog-title:hover {
-  border-color: #33a6b8;
+  border-color: #b31c35 /* #33a6b8 before */;
 }
 .blog-title:hover a {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 .blog-title a {
   font-size: 130%;
@@ -469,8 +469,8 @@ pre .deletion {
 }
 .nav {
   margin: 10px 0;
-  font-size: 85%;
-  text-transform: uppercase;
+  font-size: 95%;
+  text-transform: none;
   float: right;
   position: relative;
 }
@@ -496,11 +496,11 @@ pre .deletion {
   vertical-align: middle;
 }
 .nav a {
-  font-weight: bold;
+  font-weight: normal;
   color: #cecccc;
 }
 .nav a:hover {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 .nav-icon {
   font-family: FontAwesome;
@@ -623,7 +623,7 @@ pre .deletion {
   color: #4f5759;
 }
 .entry-meta-header a:hover {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 .entry-meta-header .meta-elements {
   display: block;
@@ -637,7 +637,7 @@ pre .deletion {
   color: #222;
 }
 .entry-meta-header .date a:hover {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 .entry-meta-header .commentscount {
   font-size: 90%;
@@ -827,7 +827,7 @@ pre .deletion {
   color: #777;
 }
 .entry-meta-footer a:hover {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 .entry-meta-footer li {
   list-style-type: none;
@@ -1047,10 +1047,10 @@ pre .deletion {
   color: #777;
 }
 #footer .footer-blog-title:hover {
-  border-color: #33a6b8;
+  border-color: #b31c35 /* #33a6b8 before */;
 }
 #footer .footer-blog-title:hover a {
-  color: #33a6b8;
+  color: #b31c35 /* #33a6b8 before */;
 }
 #footer .copyright {
   display: block;
