@@ -497,7 +497,7 @@ pre .deletion {
 }
 .nav a {
   font-weight: normal;
-  color: #cecccc;
+  color: #b31c35 /* #33a6b8 before */ /* #cecccc before */;
 }
 .nav a:hover {
   color: #b31c35 /* #33a6b8 before */;
