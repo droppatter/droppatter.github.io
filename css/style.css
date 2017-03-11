@@ -175,7 +175,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #2a8998;
+  color: #b31c35 /* #33a6b8 before */ /* #2a8998 before */;
 }
 strong,
 b {
