@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>静态博客，但是复健。</title>
+    <link href="/2022/06/19/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%EF%BC%8C%E4%BD%86%E6%98%AF%E5%A4%8D%E5%81%A5%E3%80%82/"/>
+    <url>/2022/06/19/%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%EF%BC%8C%E4%BD%86%E6%98%AF%E5%A4%8D%E5%81%A5%E3%80%82/</url>
+    
+    <content type="html"><![CDATA[<p>疫情居家，赋闲难耐。想起六年前给自己和安琪做过博客，参考了UP主<a href="https://www.bilibili.com/video/BV1mU4y1j72n?share_source=copy_web">搬运崽啊</a>的视频，尝试在Win和Mac系统上重新搭建。</p><span id="more"></span><h3 id="静态博客工具"><a href="#静态博客工具" class="headerlink" title="静态博客工具"></a>静态博客工具</h3><ul><li><strong>安装Node.js 一个JavaScript的运行环境。</strong></li></ul><p>参考文章: <a href="https://www.cnblogs.com/liuqiyun/p/8133904.html">Node.js安装及环境配置之Windows篇-刘奇云</a></p><ul><li><strong>安装Git 一个管理系统。</strong></li></ul><p>参考文章：<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Windows系统Git安装教程（详解Git安装过程）-学为所用</a></p><p>在管理员运行的CMD中输入：</p><div class="code-wrapper"><pre><code class="hljs bash">node -v            <span class="hljs-comment"># 这三个都是检查版本，来查看是否安装成功</span>npm -vgit --version</code></pre></div><ul><li><strong>安装Hexo</strong></li></ul><p>在管理员运行的CMD中输入：</p><div class="code-wrapper"><pre><code class="hljs bash">npm install hexo-cli -g     <span class="hljs-comment"># 安装Hexo</span>hexo -v                     <span class="hljs-comment"># 检查版本</span></code></pre></div><h3 id="GitHub建仓生成SSH-Keys"><a href="#GitHub建仓生成SSH-Keys" class="headerlink" title="GitHub建仓生成SSH Keys"></a>GitHub建仓生成SSH Keys</h3><ul><li><strong>生成SSH Keys</strong></li></ul><p>打开任意文件，右键打开Git Bash，输入：</p><div class="code-wrapper"><pre><code class="hljs bash">&gt; git config --global user.name <span class="hljs-string">&quot;GitHub账号的名字&quot;</span>，&gt; git config --global user.email <span class="hljs-string">&quot;GitHub账号的邮箱&quot;</span>&gt; ssh-keygen -t rsa -C <span class="hljs-string">&quot;GitHub账号的邮箱&quot;</span>                  <span class="hljs-comment"># 按3次回车即可。</span>&gt; <span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub                                 <span class="hljs-comment"># 输出SSH Key全部复制下来~</span></code></pre></div><ul><li><strong>导入SSH Keys</strong></li></ul><p>在C盘-用户-用户名-.ssh中找到id_rsa.pub,用编辑器打开，全选复制内容；在GitHub的Setting-SSH and GPG keys-SSH keys中新建导入。</p><ul><li><strong>测试是否绑定</strong></li></ul><p>在Git Bash中输入：</p><div class="code-wrapper"><pre><code class="hljs bash">ssh -T git@github.com</code></pre></div><h3 id="预览生成发布博客"><a href="#预览生成发布博客" class="headerlink" title="预览生成发布博客"></a>预览生成发布博客</h3><ul><li><strong>GitBash初始化Hexo</strong></li></ul><p>总是报错，尝试了下GitBash加速npm，本质是换源到淘宝的npm镜像网站。参考：<a href="https://www.likecs.com/show-204877074.html">https://www.likecs.com/show-204877074.html</a></p><p><strong>发现原来是管理员权限的问题，需要cd到当前文件夹。后续补充一下管理员权限打开GitBash Here。</strong>但是换源肯定不亏嗯嗯..</p><div class="code-wrapper"><pre><code class="hljs bash">&gt;hexo init                            <span class="hljs-comment">#初始化Hexo</span>&gt;hexo s                               <span class="hljs-comment">#生成本地博客，可以当预览</span>&gt;npm install hexo-deployer-git --save <span class="hljs-comment">#安装发布工具，一次即可</span>&gt;hexo g      <span class="hljs-comment">#生成博客</span>&gt;hexo d     <span class="hljs-comment">#上传发布`</span></code></pre></div><h3 id="主题美化"><a href="#主题美化" class="headerlink" title="主题美化"></a>主题美化</h3><p>待补充。</p><p>MarkdownPad 参考文章：<a href="https://blog.csdn.net/southink/article/details/119297577">https://blog.csdn.net/southink/article/details/119297577</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Develop Blog</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>读了点书</title>
+    <link href="/2017/03/13/%E8%AF%BB%E4%BA%86%E7%82%B9%E4%B9%A6/"/>
+    <url>/2017/03/13/%E8%AF%BB%E4%BA%86%E7%82%B9%E4%B9%A6/</url>
+    
+    <content type="html"><![CDATA[<p>早晨微醒的时候，外面的雨依旧簌簌地下，从昨天一直到今天。记起以前写日记时，常以天气引文，天空从晴明到昏沉，树木从萌绿到泛黄，都写过。曾在愉快时拟两只麻雀落在枝头欢鸣，到了伤时怀旧时便是簌簌雨下了，觉得雨雾好似旧事朦胧的颜色，搭调。而今日是确实在下着簌簌细雨。</p><p>博客建立已经有一段时间了，没有写多少东西出来。为什么？一是读得书少了，二是忽视生活的滋味了。问渠哪得清如许？为有源头活水来。人一如泉水，有来源才有输出，书读少了缺逻辑见识，生活少了缺态度情意，二者怎不是写东西的源头呢。</p><p>有幸与安琪同来学校图书馆，这几天随势看了一些书，结识了一些久慕其名的作家，《浮生六记》的沈复、《月亮与六便士》的毛姆、《羊脂球》的莫泊桑、《孤独六讲》的蒋勋、《人情·世故》的林夕，数下来也算看了不少书。</p><p>稍作记录。</p><span id="more"></span><p>《浮生六记》中沈先生讲与妻淑珍的趣事，看到淑珍说自己作诗由白乐天启蒙，钦慕李白的诗，沈复回道自己字三白是其夫婿，说淑珍与「白」字有缘，淑珍打趣说担心自己与白字有缘，将来要白字连篇了。这种直率愉快的文言文，并不常见，挺讨人喜欢的。或者是我孤陋寡闻了罢。</p><p>毛姆。《月亮与六便士》被别人借走了，我只拿了本《毛姆读书随笔》看了看，毛姆认为读书^[此处的「书」指小说、闲书] 是一种享受，应以乐趣为主，不应以获取知识为目的，知识的获取需要艰苦的学习。我心底是认同他的，其实说啃一本大部头，第一页读到最后一页，如果从头至尾没有一丝乐趣，我确信读者是难过的，无乐趣便无共鸣，不能深入人心，这样的书只能当作奇闻罢了。《随笔》除了写读书，还写到了毛姆对一些法国作家的态度，他一边承认着这些作家作品的伟大，一边又不吝笔墨地描绘着他们和他们的情妇们（其中甚至包括他的老师福楼拜），似乎当时法国作家有情妇是一种潮流风气，让人哭笑不得。</p><p>莫泊桑。相较毛姆对其他作家的评价，他对莫泊桑还算认同，于是我又去找了本《莫泊桑短篇小说集》翻了翻。莫泊桑小说风格写实平淡，而文尾都藏有着诡异的密谋，即使对看过不少细思极恐的恐怖短篇的我，有些文章仍然令人倍感寒心，例如《真实的故事》一文里，叙述者卫仑多心怀虚浮的悲悯，把玩弄过的女佣当作狗一般描述一般对待，真不知结尾里他是悲伤过度导致麻木式的平淡和笑，还是真切地不把人当人看。但觉人心险恶阴暗之极，妖神鬼怪难以比肩。我一面愤懑不平，一面又不能因这阴暗面丢了阳光心态，只能不停告诉自己，讽刺文章当做笑话看罢了。另有篇《月光》，老神父看着自己女儿和小伙子婉洁月光下浪漫风景，悻悻走开深思，是较温馨的一篇。</p><p>《孤独六讲》。最开始听说蒋勋，是安琪在播客上听他的《细说红楼梦》，稍带口音的醇厚低语很有特点。细看《孤独六讲》，其中说到「人与人之间总要面对生离或死别，总要面对孤独」，这样看，既然人们总免不了一场分离，那么何必相遇？还有个类似的问题，既然人们总免不了一场长眠，那么何必降生到世上走一遭？这些问题不用急着去回答，其实对于这个问题的思考就已经给予了相遇或者降生的意义，问题本身也是答案。蒋勋说：「美学的本质或许就是孤独」。孤独是何物？孤独的本质难以界定，描述性地来说，我觉得孤独是一种悲剧色彩，是一种清醒感，是一种个人英雄主义，孤独者认识到自己是孤独的时候，他便有了一种独行者的悲剧色彩，有了一种自我审视的清醒感，有了为或壮美或凄美的未来而献身的个人英雄主义，为了美而献身，也是一种美学罢。</p><p>《人情·世故》。有时想宋词也是歌词，明明是为主曲而填的辅词，然曲谱难留，歌词易存，多少词的牌曲都丢掉了，就剩下这些无曲可唱的词们，应了「众里寻她千百度 蓦然回首 那人却在灯火阑珊处」之意。正如书中一篇文章写浪漫，讲的是「地球一小时」大家关灯，吃着烛光晚餐，都表示浪漫而有情调。林夕说道，如果浪漫只是这样，古人的浪漫未免太轻易，日日烛光晚餐。讲道，浪漫必然得有心意才行，若有心，垃圾场也能看出风雅之处。全部同意，无他异议。浪漫需要敏锐的心和细致的观察。</p><p>差不多就这些。伤时感怀的时候，看一看闲书，理一理人情世故，就似乎觉得时间也没有荒废了。你看，外面茫茫然的天空，不是也微微地亮起来了么？</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Reading</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>暮狼之死</title>
+    <link href="/2017/03/07/%E6%9A%AE%E7%8B%BC%E4%B9%8B%E6%AD%BB/"/>
+    <url>/2017/03/07/%E6%9A%AE%E7%8B%BC%E4%B9%8B%E6%AD%BB/</url>
+    
+    <content type="html"><![CDATA[<span id="more"></span><ul><li>影片原名为《Logan》，《殊死一战》译得莫名其妙，X 战警之前还有个叫《背水一战》的，《暮狼之死》才是心中的题目。</li><li>英雄迟暮总是令人悲痛不忍。</li><li>Charles（X 教授）的头上多了一些毛发，据说是阿兹海默症的副作用。</li><li>Charles 讲小狼女脚上的爪子和母狮子日常保护种群的职能有关，她们都需要后脚进行防御。果然是本科学生物基因的。</li><li>Charles 的扮演者 Patrick Stewart 自己表示，在看完《金刚狼3》首映之后，毅然决定不演了，老人果然像小孩一样调皮啊..</li><li>Logan 在影片里说了三遍「你根本不了解我」。小狼女 Laura 也是会英语几天不说话。</li><li>公路上汽车抛锚，Logan 踢车让人莫名有种悠闲的感觉。</li><li>黑水公园说，这是男人中年危机，金花有时候也想砸了电脑什么也不管。砸的是蛮爽的。</li><li>Laura 开了两天车，可是狼叔一直压在挂档器上，说明小狼女一个档位开了一路。</li><li>小朋友们不是叉人粉丝么，还把叉人漫画上的一个坐标作为集合点，见到老狼，看不出来是粉丝啊，连签名也不要。</li><li>话说给 Logan 剪胡子那段倒是挺有爱的。</li><li>啊 小叉人们 一定要争气啊。可以的话 替我们给狼叔和教授扫墓。</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Movie</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>生存与自由</title>
+    <link href="/2017/01/19/%E7%94%9F%E5%AD%98%E4%B8%8E%E8%87%AA%E7%94%B1/"/>
+    <url>/2017/01/19/%E7%94%9F%E5%AD%98%E4%B8%8E%E8%87%AA%E7%94%B1/</url>
+    
+    <content type="html"><![CDATA[<p>近期在玩的游戏，原名为「Don’t Starve Together」，中文译作「饥荒」。属于漫画风格、生存沙盒类型。游戏主要目的是生存下去。</p><h2 id="生存方法"><a href="#生存方法" class="headerlink" title="生存方法"></a>生存方法</h2><p>生存的核心在于：为明天的生存而思考。</p><span id="more"></span><p>开局收集「资源」^[包括：草、树枝、金子、石头、木头。] ，找到合适的建家位置后，可以先烧点树收集木炭做好锅^[锅是不饿死（Don’t Starve）的重要保障，它也将是贯穿始终的最重要建筑。] ，最好用草叉规划一下家轮廓。都是为了以后着想，提早做好准备。</p><p>秋季要做好过冬的准备，准备好食物、草和树枝、暖石和冬帽。食物方面，需要足够的浆果和足够的肉。如果有闲余时间，找找海象巢，造好蜂箱。</p><p>冬季则要做好开春的准备。备好猪皮做雨伞，种满草做陷阱防青蛙雨，建好避雷针，也要多敲一些冰做灭火器。平时砍砍树，打打海象，捉点兔子做魔法一本。如果有空闲，补充家里的建筑如晒肉架，猪人房之类。Boss 来之前，准备好食物，一个石火堆，两套防具和武器，做到有备无患，打二走一、小心影怪，即可无伤。</p><p>开春则要做好入夏的准备。采集草后多做些陷阱，采集硝石仙人掌花等解暑物品，做好灭火器，准备好其燃料。平时打打鸭子，收集作物。闲时完善家里装修。</p><p>夏季虽然难过，但后一季为平淡的秋季，也不算很忙。是下地洞的最好时节，也是刷狗牙的好时节，更是自由支配的好时节。</p><p>Boss 来的时候。人少就备好双甲，打二三走一。人多一阵狂砍。不想打就借力打力，引到青蛙蜜蜂树人处怼死。</p><p>一年结束之后，是闲暇无聊的时候，可养牛，可做雕像棋子，做一些所谓 Power User 玩的事情：地下建家、倒腾新建筑、浪到全世界之类。</p><h2 id="一些反思"><a href="#一些反思" class="headerlink" title="一些反思"></a>一些反思</h2><p>前几天在一个服务器玩的时候，和两个小伙伴下洞穴，不小心黑死，兜里东西都被猴子偷走了。翻车还是很尴尬的。觉得：<strong>不翻车，须谨慎，小心驶得万年船</strong>。</p><p>虽说游戏主题是「生存」，但是随着玩的时间变久，我也发现了饥荒的另一有趣之处：<strong>生存之外，还有你的自由</strong>。所谓「生存」，就是备好食物，带好装备，不饿死和不被杀死。而「自由」，就是完成一些自己想做的有趣事情。这里的有趣事情可以是一个猫帽子、设计好的基地、不换金子的玩具或者圈养的电羊。觉得：<strong>勤于生存，便会有更好的自由，但是耽于生存，便会失去了自由</strong>。</p><p>最后想说，其实最有意思的是几个逗比一起，边聊边玩，就像打个扑克牌，不费脑不伤身，休闲休闲比较好。让游戏放松自己，而不是束缚自己。这是休闲游戏的初衷，也是我的游戏观。</p><p>游戏过久易伤身，适度适量最养心。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Game</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello.</title>
+    <link href="/2016/12/17/Hello./"/>
+    <url>/2016/12/17/Hello./</url>
+    
+    <content type="html"><![CDATA[<p>遥远的朋友，你好。</p><span id="more"></span><p>我是阿北冰熊，<del>数学在读生</del>，爱好科技却又不愿被其束缚。读过一些书文。只想回到 Web2.0 的博客时代，静心写写东西。</p><h3 id="关于「風雨與推演」"><a href="#关于「風雨與推演」" class="headerlink" title="关于「風雨與推演」"></a>关于「風雨與推演」</h3><p>你应看到了「風雨與推演」这个名字，别误会，这不是关于科普气象学的博客，而是记录着阿北冰熊的感悟和思考的博客。</p><p>「風雨」取自「诗经」第一首诗之题。是希望自己谈生活，讲杂事时，要凭心中「无邪之思」书写生活纷繁之事。</p><p>「推演」取自数学证明中的常用方法「推论演绎」。是希望自己不忘数学系本分，遇事勤于思考，勿嫌麻烦，求根究底。</p><p>两词语虽然不相及，却是写文的宗旨，因此将其作为博客名。</p><h3 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h3><p>还有一个「初衷」。它应当出现在这里。</p><blockquote><p>让科技回归工具，践行质朴效率的自然生活方式，通过在信息时代宣称不信息，来找到科技和自然的平衡点。</p></blockquote><p>请多关照。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Diary</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>样式草稿</title>
+    <link href="/2016/01/01/%E6%A0%B7%E5%BC%8F%E8%8D%89%E7%A8%BF/"/>
+    <url>/2016/01/01/%E6%A0%B7%E5%BC%8F%E8%8D%89%E7%A8%BF/</url>
+    
+    <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><hr><p><strong>粗体</strong><br><em>重点</em><br><del>删除线</del></p><ul><li>书包<ul><li>大书包</li><li>小书包</li></ul></li><li>橡皮</li><li>铅笔</li></ul><ol><li>书包<ol><li>中书包</li><li>斜背包</li></ol></li><li>橡皮</li><li>铅笔</li></ol><p>正文^[选自《哈姆雷特》]：<strong>生存还是毁灭</strong>？这是个<a href="http://hanyu.baidu.com/zici/s?wd=%E9%97%AE%E9%A2%98&query=%E9%97%AE%E9%A2%98&srcid=28232&from=kg0&from=kg0">问题</a>。究竟哪样更高贵，去忍受那狂暴的命运无情的摧残 还是挺身去反抗那无边的烦恼，把它扫一个干净。去死，去睡就结束了，如果睡眠能结束我们心灵的创伤和肉体所承受的千百种痛苦，那真是生存求之不得的天大的好事。<del>去死，去睡，去睡，也许会做梦</del>！唉，这就麻烦了，即使摆脱了这尘世 可在这死的睡眠里又会做些什么梦呢？真得想一想，就这点顾虑使人受着终身的折磨，谁甘心忍受那鞭打和嘲弄，受人压迫，受尽侮蔑和轻视，忍受那失恋的痛苦，法庭的拖延，衙门的横征暴敛，默默无闻的劳碌却只换来多少凌辱。但他自己只要用把尖刀就能解脱了。谁也不甘心，呻吟、流汗拖着这残生，可是对死后又感觉到恐惧，又从来没有任何人从死亡的国土里回来，因此动摇了，宁愿忍受着目前的苦难 而不愿投奔向另一种苦难。顾虑就使我们都变成了懦夫，使得<em>那果断的本色</em>蒙上了一层思虑的惨白的容颜，本来可以做出伟大的事业，由于思虑就化为乌有了，丧失了行动的能力。 </p><div class="code-wrapper"><pre><code class="hljs bash">node -vgit -v</code></pre></div><p><span class="font-kai">（ていねい，日语里面服务、说明能特别细心到位的意思）</span></p><blockquote><p>Sandboxing is required for all apps available on the Mac and iOS app store, in order to grant users a high level of data security. Sandboxed apps are only permitted access to files explicitly provided by the user - for example Markdown text files. When working with different Markdown applications, sandboxing can cause inconveniences for the user.</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Diary</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
