@@ -1,9 +1,9 @@
  @font-face{
     font-family: 'FZQK';
-    src: url("../font/FZQKBYSJW.woff2") format("woff2"),
-       url("../font/FZQKBYSJW.woff") format("woff"),
-       url("../font/FZQKBYSJW.ttf") format("truetype"),
-       url("../font/FZQKBYSJW.eot") format("embedded-opentype"),
-       url("../font/FZQKBYSJW.svg") format("svg"),
-       url("../font/FZQKBYSJW.otf") format("opentype");
+    src: url("/font/FZQKBYSJW.woff2") format("woff2"),
+       url("/font/FZQKBYSJW.woff") format("woff"),
+       url("/font/FZQKBYSJW.ttf") format("truetype"),
+       url("/font/FZQKBYSJW.eot") format("embedded-opentype"),
+       url("/font/FZQKBYSJW.svg") format("svg"),
+       url("/font/FZQKBYSJW.otf") format("opentype");
     }
