@@ -182,6 +182,7 @@ h6:hover > .anchorjs-link {
 .footer-inner {
   padding: 3rem 0 1rem 0;
   text-align: center;
+  font-size: 0.75rem;
 }
 .footer-inner > div:not(:first-child) {
   margin: 0.25rem 0;
@@ -284,6 +285,10 @@ sup > a::before,
 .footnote-text {
   padding-left: 0.5em;
 }
+.sub {
+  font-size: 2rem;
+  font-weight: bold;
+}
 .navbar {
   background-color: transparent;
   font-size: 0.875rem;
@@ -292,6 +297,7 @@ sup > a::before,
 }
 .navbar .navbar-brand {
   color: var(--navbar-text-color);
+  font-family: FZQK;
 }
 .navbar .navbar-toggler .animated-icon span {
   background-color: var(--navbar-text-color);
@@ -437,6 +443,7 @@ sup > a::before,
   }
 }
 .banner-text {
+  font-family: FZQK;
   color: var(--subtitle-color);
   max-width: calc(960px - 6rem);
   width: 80%;
@@ -758,7 +765,7 @@ sup > a::before,
   padding: 3rem 0;
 }
 html {
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.02em;
 }
 html,
