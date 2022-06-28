@@ -1,10 +1,10 @@
  @font-face{
-    font-family: 'FZQK';
-    src: url("/font/FZQKBYSJW.woff2") format("woff2"),
-       url("/font/FZQKBYSJW.woff") format("woff"),
-       url("/font/FZQKBYSJW.ttf") format("truetype"),
-       url("/font/FZQKBYSJW.eot") format("embedded-opentype"),
-       url("/font/FZQKBYSJW.svg") format("svg"),
-       url("/font/FZQKBYSJW.otf") format("opentype");
+    font-family: 'QK';
+    src: url("../font/QK.woff2") format("woff2"),
+       url("../font/QK.woff") format("woff"),
+       url("../font/QK.ttf") format("truetype"),
+       url("../font/QK.eot") format("embedded-opentype"),
+       url("../font/QK.svg") format("svg"),
+       url("../font/QK.otf") format("opentype");
     }
 
