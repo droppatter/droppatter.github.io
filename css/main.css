@@ -297,7 +297,7 @@ sup > a::before,
 }
 .navbar .navbar-brand {
   color: var(--navbar-text-color);
-  font-family: FZQK;
+  font-family: QK;
 }
 .navbar .navbar-toggler .animated-icon span {
   background-color: var(--navbar-text-color);
@@ -443,7 +443,7 @@ sup > a::before,
   }
 }
 .banner-text {
-  font-family: FZQK;
+  font-family: QK;
   color: var(--subtitle-color);
   max-width: calc(960px - 6rem);
   width: 80%;
