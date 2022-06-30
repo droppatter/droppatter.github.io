@@ -105,7 +105,7 @@
           
             <li class="nav-item">
               <a class="nav-link" href="/">
-                
+                <i class="iconfont icon-home-fill"></i>
                 首页
               </a>
             </li>
@@ -117,8 +117,8 @@
           
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
-                
-                本站目录
+                <i class="iconfont icon-book"></i>
+                目录
               </a>
             </li>
           
@@ -129,8 +129,8 @@
           
             <li class="nav-item">
               <a class="nav-link" href="/about/">
-                
-                一个背包
+                <i class="iconfont icon-bookmark-fill"></i>
+                关于
               </a>
             </li>
           
@@ -234,61 +234,92 @@
             
               <div class="markdown-body">
                 
-                <p>疫情居家，得闲难耐。<span id="more"></span>想起六年前给自己和安琪做过博客，参考了UP主<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mU4y1j72n?share_source=copy_web">搬运崽啊</a>的视频，尝试在Win和Mac系统上重新搭建。</p>
-<h3 id="1-博客生成工具"><a href="#1-博客生成工具" class="headerlink" title="1. 博客生成工具"></a>1. 博客生成工具</h3><h4 id="1-1-安装Node-js-一个JavaScript的运行环境。"><a href="#1-1-安装Node-js-一个JavaScript的运行环境。" class="headerlink" title="1.1 安装Node.js 一个JavaScript的运行环境。"></a>1.1 安装Node.js 一个JavaScript的运行环境。</h4><p>参考文章: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/liuqiyun/p/8133904.html">Node.js安装及环境配置之Windows篇-刘奇云</a></p>
-<h4 id="1-2-安装Git-一个管理系统。"><a href="#1-2-安装Git-一个管理系统。" class="headerlink" title="1.2 安装Git 一个管理系统。"></a>1.2 安装Git 一个管理系统。</h4><p>参考文章：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Windows系统Git安装教程（详解Git安装过程）-学为所用</a></p>
-<p>在管理员运行的CMD中输入：</p>
+                <p>疫情居家，得闲难耐。<span id="more"></span></p>
+<p>想起六年前给自己和安琪做过博客，参考了UP主<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mU4y1j72n?share_source=copy_web">搬运崽啊</a>的视频，尝试在Win和Mac系统上重新搭建。</p>
+<h2 id="1-博客生成工具"><a href="#1-博客生成工具" class="headerlink" title="1. 博客生成工具"></a>1. 博客生成工具</h2><ul>
+<li><p>安装Node.js 一个JavaScript的运行环境。</p>
+<p> 参考文章: <a target="_blank" rel="noopener" href="https://www.cnblogs.com/liuqiyun/p/8133904.html">Node.js安装及环境配置之Windows篇-刘奇云</a></p>
+</li>
+<li><p>安装Git 一个管理系统。</p>
+<p> 参考文章：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">Windows系统Git安装教程（详解Git安装过程）-学为所用</a></p>
+<p> 在管理员运行的CMD中输入：</p>
 <div class="code-wrapper"><pre><code class="hljs bash">node -v            <span class="hljs-comment"># 这三个都是检查版本，来查看是否安装成功</span>
 npm -v
-git --version</code></pre></div>
-
-<h4 id="1-3-安装Hexo"><a href="#1-3-安装Hexo" class="headerlink" title="1.3 安装Hexo"></a>1.3 安装Hexo</h4><p>在管理员运行的CMD中输入：</p>
+git --version</code></pre></div></li>
+<li><p>安装Hexo</p>
+<p> 在管理员运行的CMD中输入：</p>
 <div class="code-wrapper"><pre><code class="hljs bash">npm install hexo-cli -g     <span class="hljs-comment"># 安装Hexo</span>
-hexo -v                     <span class="hljs-comment"># 检查版本</span></code></pre></div>
-
-<h3 id="2-建仓存放博客-GitHub"><a href="#2-建仓存放博客-GitHub" class="headerlink" title="2. 建仓存放博客 (GitHub)"></a>2. 建仓存放博客 (GitHub)</h3><h4 id="2-1-生成SSH-Keys"><a href="#2-1-生成SSH-Keys" class="headerlink" title="2.1 生成SSH Keys"></a>2.1 生成SSH Keys</h4><p>打开任意文件，右键打开Git Bash，输入：</p>
+hexo -v                     <span class="hljs-comment"># 检查版本</span></code></pre></div></li>
+</ul>
+<h2 id="2-建仓存放博客-GitHub"><a href="#2-建仓存放博客-GitHub" class="headerlink" title="2. 建仓存放博客 (GitHub)"></a>2. 建仓存放博客 (GitHub)</h2><ul>
+<li><p>生成SSH Keys</p>
+<p> 打开任意文件，右键打开Git Bash，输入：</p>
 <div class="code-wrapper"><pre><code class="hljs bash">&gt; git config --global user.name <span class="hljs-string">&quot;GitHub账号的名字&quot;</span>，
 &gt; git config --global user.email <span class="hljs-string">&quot;GitHub账号的邮箱&quot;</span>
 &gt; ssh-keygen -t rsa -C <span class="hljs-string">&quot;GitHub账号的邮箱&quot;</span>                  <span class="hljs-comment"># 按3次回车即可。</span>
-&gt; <span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub                                 <span class="hljs-comment"># 输出SSH Key全部复制下来~</span></code></pre></div>
-
-<h4 id="2-2-导入SSH-Keys"><a href="#2-2-导入SSH-Keys" class="headerlink" title="2.2 导入SSH Keys"></a>2.2 导入SSH Keys</h4><p>在C盘-用户-用户名-.ssh中找到id_rsa.pub,用编辑器打开，全选复制内容。</p>
-<p>在GitHub的Setting-SSH and GPG keys-SSH keys中新建导入。</p>
-<h4 id="2-3-测试是否绑定"><a href="#2-3-测试是否绑定" class="headerlink" title="2.3 测试是否绑定"></a>2.3 测试是否绑定</h4><p>在Git Bash中输入：</p>
-<div class="code-wrapper"><pre><code class="hljs bash">ssh -T git@github.com</code></pre></div>
-
-<h3 id="3-预览生成发布博客"><a href="#3-预览生成发布博客" class="headerlink" title="3. 预览生成发布博客"></a>3. 预览生成发布博客</h3><p>总是报错，尝试GitBash加速npm，本质是换源到淘宝的npm镜像网站。参考<a target="_blank" rel="noopener" href="https://www.likecs.com/show-204877074.html">链接</a></p>
-<p><strong>发现原来是管理员权限的问题，需要cd到当前文件夹。后续补充一下管理员权限打开GitBash Here。</strong>但是换源肯定不亏嗯嗯..</p>
+&gt; <span class="hljs-built_in">cat</span> ~/.ssh/id_rsa.pub                                 <span class="hljs-comment"># 输出SSH Key全部复制下来~</span></code></pre></div></li>
+<li><p>导入SSH Keys</p>
+<p> 在C盘-用户-用户名-.ssh中找到id_rsa.pub,用编辑器打开，全选复制内容。</p>
+<p> 在GitHub的Setting-SSH and GPG keys-SSH keys中新建导入。</p>
+</li>
+<li><p>测试是否绑定</p>
+<p> 在Git Bash中输入：</p>
+<div class="code-wrapper"><pre><code class="hljs bash">ssh -T git@github.com</code></pre></div></li>
+</ul>
+<h2 id="3-预览生成发布博客"><a href="#3-预览生成发布博客" class="headerlink" title="3. 预览生成发布博客"></a>3. 预览生成发布博客</h2><p>总是报错，尝试GitBash加速npm，本质是换源到淘宝的npm镜像网站。参考<a target="_blank" rel="noopener" href="https://www.likecs.com/show-204877074.html">链接</a></p>
+<p>发现原来是管理员权限的问题，需要cd到博客文件夹。但是换源肯定不亏嗯嗯..</p>
+<ul>
+<li><p>管理员权限打开GitBash Here。</p>
+<p> 创建GitBahs的快捷方式，在属性-快捷方式中将起始位置改为博客文件夹。属性-快捷方式中可以选择用管理员权限运行。</p>
+</li>
+<li><p>hexo 的指令</p>
 <div class="code-wrapper"><pre><code class="hljs bash">&gt;hexo init                            <span class="hljs-comment">#初始化Hexo</span>
 &gt;hexo s                               <span class="hljs-comment">#生成本地博客，可以当预览</span>
 &gt;npm install hexo-deployer-git --save <span class="hljs-comment">#安装发布工具，一次即可</span>
 &gt;hexo g    							  <span class="hljs-comment">#生成博客</span>
-&gt;hexo d   							  <span class="hljs-comment">#上传发布`</span></code></pre></div>
-
-<h3 id="4-主题美化"><a href="#4-主题美化" class="headerlink" title="4. 主题美化"></a>4. 主题美化</h3><h4 id="4-1-Fluid主题微调-单独修改字体（本地字体）"><a href="#4-1-Fluid主题微调-单独修改字体（本地字体）" class="headerlink" title="4.1 Fluid主题微调 - 单独修改字体（本地字体）"></a>4.1 Fluid主题微调 - 单独修改字体（本地字体）</h4><p>首先，将需要的字体放在自建文件夹里，比如_post根目录下自建font文件夹。然后，根据<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E8%87%AA%E5%AE%9A%E4%B9%89-js-css-html">Fluid用户手册-自定义CSS</a>，在指定目录处新建css文件，（参考<a target="_blank" rel="noopener" href="https://dhndzwxj.vercel.app/3276806131.html#69b-%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%AD%97%E4%BD%93">链接</a>）写入：</p>
+&gt;hexo d   							  <span class="hljs-comment">#上传发布`</span></code></pre></div></li>
+</ul>
+<h2 id="4-主题美化"><a href="#4-主题美化" class="headerlink" title="4. 主题美化"></a>4. 主题美化</h2><ul>
+<li><p>Fluid主题微调 - 单独修改字体（本地字体） - 显示失败了..</p>
+<ul>
+<li><p>首先，将需要的字体放在自建文件夹里，比如_post根目录下自建font文件夹。然后，根据<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#%E8%87%AA%E5%AE%9A%E4%B9%89-js-css-html">Fluid用户手册-自定义CSS</a>，在指定目录处新建css文件，参考<a target="_blank" rel="noopener" href="https://dhndzwxj.vercel.app/3276806131.html#69b-%E4%BD%BF%E7%94%A8%E6%9C%AC%E5%9C%B0%E5%AD%97%E4%BD%93">链接</a>写入：</p>
 <div class="code-wrapper"><pre><code class="hljs css"><span class="hljs-keyword">@font-face</span>&#123;
    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&#x27;FZQK&#x27;</span>; <span class="hljs-comment">/* 下面这串都带上</span>
 <span class="hljs-comment">   src: url(&quot;../font/FZQKBYSJW.woff2&quot;) format(&quot;woff2&quot;),</span>
-<span class="hljs-comment">      url(&quot;../font/FZQKBYSJW.woff&quot;) format(&quot;woff&quot;),</span>
-<span class="hljs-comment">      url(&quot;../font/FZQKBYSJW.ttf&quot;) format(&quot;truetype&quot;),</span>
-<span class="hljs-comment">      url(&quot;../font/FZQKBYSJW.eot&quot;) format(&quot;embedded-opentype&quot;),</span>
-<span class="hljs-comment">      url(&quot;../font/FZQKBYSJW.svg&quot;) format(&quot;svg&quot;),</span>
-<span class="hljs-comment">      url(&quot;../font/FZQKBYSJW.otf&quot;) format(&quot;opentype&quot;);</span>
-<span class="hljs-comment">   &#125;</span></code></pre></div>
-
-<h5 id="4-1-1-单独更改主标题字体"><a href="#4-1-1-单独更改主标题字体" class="headerlink" title="4.1.1 单独更改主标题字体"></a>4.1.1 单独更改主标题字体</h5><p>在<code>\css\_pages\_base\_widget\header.styl</code>的navbar-brand处加入<code>font-family FZQK</code>。</p>
-<h5 id="4-1-2-单独更改副标题（文章标题）字体"><a href="#4-1-2-单独更改副标题（文章标题）字体" class="headerlink" title="4.1.2 单独更改副标题（文章标题）字体"></a>4.1.2 单独更改副标题（文章标题）字体</h5><ol>
+<span class="hljs-comment">        url(&quot;../font/FZQKBYSJW.woff&quot;) format(&quot;woff&quot;),</span>
+<span class="hljs-comment">        url(&quot;../font/FZQKBYSJW.ttf&quot;) format(&quot;truetype&quot;),</span>
+<span class="hljs-comment">        url(&quot;../font/FZQKBYSJW.eot&quot;) format(&quot;embedded-opentype&quot;),</span>
+<span class="hljs-comment">        url(&quot;../font/FZQKBYSJW.svg&quot;) format(&quot;svg&quot;),</span>
+<span class="hljs-comment">        url(&quot;../font/FZQKBYSJW.otf&quot;) format(&quot;opentype&quot;);</span>
+<span class="hljs-comment">    &#125;</span></code></pre></div></li>
+<li><p>单独更改主标题字体：在<code>\css\_pages\_base\_widget\header.styl</code>的navbar-brand处加入<code>font-family FZQK</code>。</p>
+</li>
+<li><p>单独更改副标题（文章标题）字体： </p>
+<ul>
 <li><p><strong>修改类</strong>查看网页知副标题的<code>class</code>为<code>h2</code>（包含于<code>banner-text</code>），为了不影响文章中的<code>h2</code>标题格式，首先要修改副标题的<code>class</code>：在<code>layout\_partials\header\banner.ejs</code>中找到副标题对应代码，将h2替换为<code>sub</code>。</p>
 </li>
 <li><p><strong>修改字体</strong>在<code>\css\_pages\_base\_widget\header.styl</code>找到<code>banner-text</code>，加入<code>font-family FZQK</code>。这里不直接在<code>sub</code>类中改，是因为文章标题下的日期等信息也包含在<code>banner-text</code>类中，字体最好统一。</p>
 </li>
 <li><p><strong>调整标题大小</strong>在<code>\css\_pages\_base\_widget\header.styl</code>加入:</p>
 <div class="code-wrapper"><pre><code class="hljs style">.sub                   //自己加的东西
-  font-size 1.5rem
-  font-weight bold</code></pre></div></li>
-</ol>
-<p>待补充。</p>
-<p>MarkdownPad 参考文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/southink/article/details/119297577">https://blog.csdn.net/southink/article/details/119297577</a></p>
+ font-size 1.5rem
+ font-weight bold</code></pre></div></li>
+</ul>
+</li>
+</ul>
+<p> 发现本地字体显示失败。本地预览时是正常的，但是部署到GitHub后就失败了。不知为何。</p>
+</li>
+<li><p>Fluid主题微调 - 修改字体（网络字体）<br> 在<a target="_blank" rel="noopener" href="https://fonts.google.com/">谷歌字体网站</a>选择完字体后，网站可以生成调用该字体的head代码。</p>
+<p> 然后将head代码添加到fluid的<code>_config.yml</code>文件中<code>custom_head:</code>。此时再修改相关的font-family使用字体即可。</p>
+</li>
+</ul>
+<h2 id="5-创建图床"><a href="#5-创建图床" class="headerlink" title="5. 创建图床"></a>5. 创建图床</h2><p>待补充。</p>
+<p>有趣的文章稍后读：<br><a target="_blank" rel="noopener" href="https://sspai.com/post/69926">微信公众号的排版自动化，让阅读体验更进一步</a></p>
+<p><a target="_blank" rel="noopener" href="https://sspai.com/post/69661">我是怎样管理 Hexo 博客的：写作，同步和上传工具及流程分享</a></p>
+<p><a target="_blank" rel="noopener" href="https://sspai.com/post/73386">一日一技 | 我开发的这款小工具，轻松助你将飞书文档转为 Markdown</a></p>
+<p><a target="_blank" rel="noopener" href="https://sspai.com/post/58509">内容团队协作的最佳形式：少数派编辑部如何用飞书</a></p>
+<p><a target="_blank" rel="noopener" href="https://sspai.com/post/68718">https://sspai.com/post/68718</a></p>
+<p><a target="_blank" rel="noopener" href="https://sspai.com/post/68349">https://sspai.com/post/68349</a></p>
 
                 
               </div>
